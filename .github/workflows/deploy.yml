@@ -22,4 +22,5 @@ jobs:
             cd ~/enterprise-3tier-app
             git pull origin main
             docker compose up -d --build
+            sleep 5
             curl -fsS http://localhost/api/health
